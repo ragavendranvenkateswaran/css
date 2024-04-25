@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      /* border: 2PX solid red; */
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: violet;
+
+    }
+
+    .form-group {
+      /* border: 1px solid black; */
+      text-align: center;
+      padding: 1%;
+      width: 20%;
+      font-size: xx-large;
+      margin-left: 38%;
+      font-family: sans-serif
+    }
+
+    button {
+      /* border: 2px solid black; */
+      background-color: rgb(142, 135, 235);
+      margin-left: 43%;
+      margin-top: 25px;
+      width: 10%;
+      height: 40px;
+      border-radius: 50px;
+      color: white;
+      font-size: large;
+      font-family: serif
+    }
+
+    .a {
+
+      width: 45%;
+      justify-content: center;
+      height: 25px;
+
+    }
+
+    table,
+    td,
+    th {
+      border: 2px solid black;
+      margin-left: 35%;
+      margin-top: 2%;
+      width: 30%;
+
+    }
+    .b{
+      position: absolute;
+      top: 30%;
+      
+    }
+    #total{
+      margin-left: 60%;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>GROCERY LIST</h1>
+  <div id="a">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">product</label>
+        <input class="a" type="text" class="form-control" id="product" aria-describedby="emailHelp" required>
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">quatity</label>
+        <input class="a" type="number" class="quatity" id="quatity" required>
+      </div>
+      <div class="form-group">
+        <label class="price" for="price">price</label>
+        <input class="a" type="number" class="price" id="price" required>
+
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <table id="table">
+
+    <thead>
+      <tr>
+        <th scope="col">PRODUCT</th>
+        <th scope="col">QUANTITY</th>
+        <th scope="col">PRICE</th>
+        <th scope="col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+    <td colspan="4"></td>
+  </table>
+  <tr>
+    
+  </tr>
+  <div class="b" >
+    <h2>GRAND TOTAL</h2>
+  <div id="total"></div>
+  </div>
+  <script src="./createelement.js"></script>
+</body>
+
+</html>
